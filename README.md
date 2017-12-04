@@ -5,7 +5,7 @@ This is application is built as part of a course in full-stack development, and 
 ## Stack
 ### Back-end
 + MongoDB
-+ Moongose.js
++ Mongoose.js
 + Express.js
 + Node.js
 ### Front-end
