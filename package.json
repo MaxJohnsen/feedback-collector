@@ -9,9 +9,11 @@
   },
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client \""
+    "dev-server": "nodemon index.js",
+    "dev-client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client \"",
+    "heroku-postbuild":
+      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && del-cli client/node_modules"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +21,7 @@
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "cookie-session": "^2.0.0-beta.3",
+    "del-cli": "^1.1.0",
     "express": "^4.16.2",
     "mongoose": "^4.13.6",
     "nodemon": "^1.12.1",
