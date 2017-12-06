@@ -26,7 +26,7 @@ require('./routes/billingRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // To reach this code, the request's route is not recognized,
-  // and we are in a production environment
+  // and we are in a production
 
   // Check if the request are for production assets such as main.js and main.css
   app.use(express.static('client/build'));
@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'production') {
   // will use the route to decide which component to show
   const path = require('path');
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve('__dirname', 'client', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
 
