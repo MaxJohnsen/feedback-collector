@@ -5,9 +5,7 @@ import * as actions from '../actions';
 
 import Header from './Header';
 
-const Landing = () => {
-  return <h2>Landing Page</h2>;
-};
+import Landing from './Landing';
 const Dashboard = () => {
   return <h2>Dashboard</h2>;
 };
@@ -21,10 +19,12 @@ class App extends Component {
     return (
       <div>
         <BrowserRouter>
-          <div className="container">
+          <div>
             <Header />
-            <Route exact path="/" component={Landing} />
-            <Route path="/dashboard" component={Dashboard} />
+            <div className="container">
+              <Route exact path="/" component={Landing} />
+              <Route path="/dashboard" component={Dashboard} />
+            </div>
           </div>
         </BrowserRouter>
       </div>

@@ -4,6 +4,7 @@ module.exports = {
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
   mongoURI: process.env.MONGO_URI,
   cookieKey: process.env.COOKIE_KEY,
-  googleCallbackURI:
-    'https://feedback-collector.herokuapp.com/auth/google/callback',
+  googleCallbackURI: process.env.GOOGLE_CALLBACK_URI,
+  stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+  stripeSecretKey: process.env.STRIPE_SECRET_KEY,
 };
