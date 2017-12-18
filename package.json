@@ -12,8 +12,7 @@
     "dev-server": "nodemon index.js",
     "dev-client": "npm run start --prefix client",
     "dev": "concurrently \"npm run dev-server\" \"npm run dev-client \"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && del-cli client/node_modules"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && del-cli client/node_modules"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +26,7 @@
     "nodemon": "^1.12.1",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
+    "sendgrid": "^5.2.3",
     "stripe": "^5.4.0"
   }
 }

@@ -4,11 +4,9 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 import Header from './Header';
-
+import Dashboard from './Dashboard';
 import Landing from './Landing';
-const Dashboard = () => {
-  return <h2>Dashboard</h2>;
-};
+import SurveyNew from './surveys/SurveyNew';
 
 class App extends Component {
   componentDidMount() {
@@ -24,6 +22,7 @@ class App extends Component {
             <div className="container">
               <Route exact path="/" component={Landing} />
               <Route path="/dashboard" component={Dashboard} />
+              <Route path="/survey/new" component={SurveyNew} />
             </div>
           </div>
         </BrowserRouter>
