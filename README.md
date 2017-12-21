@@ -11,15 +11,23 @@ _Note:_ This is application is built as part of a course in full-stack developme
 * MongoDB
 * Express.js
 * Node.js
-  ### Front-end
+
+### Front-end
+
 * React.js
 * Redux.js
-  ### Authentication
+
+### Authentication
+
 * Google OAuth
 * Passport.js
-  ### Payment
+
+### Payment
+
 * Stripe
-  ### Email
+
+### Email
+
 * Sendgrid
 
 ## Hosting
