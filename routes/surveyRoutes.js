@@ -81,7 +81,6 @@ module.exports = app => {
         ).exec();
       })
       .value();
-    console.log('executed');
     res.send({});
   });
 };
